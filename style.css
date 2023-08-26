@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@500;600&family=Inconsolata:wght@500&family=Lexend+Deca:wght@500&family=Montserrat:wght@500;700;800&family=Poppins&family=Roboto:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.left {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+.right {
+  height: 100%;
+  width: 60%;
+  background-color: aqua;
+}
+.rtop {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.rbuttom {
+  height: 50%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1569442130407-8d2d49e741db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2873&q=80);
+  background-size: cover;
+  background-position: center;
+}
+.rtopleft {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1560607162-26b0344e6943?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2865&q=80);
+  background-size: cover;
+  background-position: center;
+}
+.rtopright {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1609424572698-04d9d2e04954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
+  background-size: cover;
+  background-position: center;
+}
+.lnav {
+  width: 100%;
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+.lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.lnav i {
+  cursor: pointer;
+}
+.left .textarea {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.textarea h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+.textarea p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.textarea a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 13px;
+}
+.textarea a:hover {
+  color: #fea639;
+}
+.left .textarea h1:hover {
+  color: #fea639;
+}
+.lnavr a:hover {
+  color: #fea639;
+}
+.lnav > i:active {
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .left .textarea {
+    margin-top: 20px;
+  }
+  .main h1 {
+    font-size: 60px;
+  }
+  .main .left p {
+    font-size: 10px;
+  }
+  .right {
+    width: 100%;
+  }
+}
