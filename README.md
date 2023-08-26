@@ -1,2 +1,2 @@
-# maheoffl.github.io
-my first landing page
+#responsive website
+a beautiful landing page
